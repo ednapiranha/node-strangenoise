@@ -1,0 +1,33 @@
+{
+  "name": "strangenoise",
+  "version": "0.0.0",
+  "description": "Image glitch and tag transformer",
+  "main": "index.js",
+  "dependencies": {
+    "bad-words": "^1.4.2",
+    "glitcher": "^1.11.0",
+    "level": "^1.4.0",
+    "moby": "^1.1.2",
+    "natural": "^0.4.0",
+    "readimage": "^1.1.1",
+    "wordnet-db": "^3.1.2",
+    "writegif": "^1.1.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.0.2",
+    "should": "^11.1.0"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --timeout 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ednapiranha/node-strangenoise.git"
+  },
+  "keywords": [
+    "glitch",
+    "synonyms"
+  ],
+  "author": "Jen",
+  "license": "BSD-3-Clause"
+}
