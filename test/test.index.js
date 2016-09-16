@@ -9,7 +9,7 @@ describe('strange noise', () => {
     let random = new StrangeNoise();
     let tags = ['dog'];
 
-    random.scan('./test/a.gif', tags, (err, resp) => {
+    random.scan('./test/glitch.gif', tags, (err, resp) => {
       console.log('found synonym: ', resp[tags[0]].title);
       should.exist(resp[tags[0]]);
       done();
@@ -20,7 +20,7 @@ describe('strange noise', () => {
     let random = new StrangeNoise();
     let tags = ['fuck'];
 
-    random.scan('./test/a.gif', tags, (err, resp) => {
+    random.scan('./test/glitch.gif', tags, (err, resp) => {
       console.log('no synonym found: ', resp[tags[0]]);
       should.not.exist(resp[tags[0]].title);
       done();
